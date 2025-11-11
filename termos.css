@@ -1,0 +1,81 @@
+/*----------------------------------------------------------*/
+/* Corpo geral */
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px; /* espaço pro header fixo */
+  padding-bottom: 100px; /* espaço pro footer fixo */
+}
+
+/*----------------------------------------------------------*/
+/* Card dos Termos */
+.term {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px hsla(0, 96%, 39%, 0.76);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 600px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.term:hover {
+  transform: scale(1.03);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/*----------------------------------------------------------*/
+/* Botão e links */
+.sem-sublinhado {
+  text-decoration: none;
+  color: white;
+}
+
+button.sem-sublinhado {
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  box-shadow: 0 4px 5px hsla(0, 96%, 39%, 0.76);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button.sem-sublinhado:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/*----------------------------------------------------------*/
+/* Header e Footer */
+.bg-custom {
+  background-color: #0D0D0D;
+}
+
+footer {
+  background-color: #0D0D0D;
+  box-shadow: 0 -2px 5px hsla(0, 96%, 39%, 0.76);
+}
+
+/*----------------------------------------------------------*/
+/* Responsividade */
+@media (max-width: 768px) {
+  footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer p {
+    margin: 5px 0;
+  }
+}
